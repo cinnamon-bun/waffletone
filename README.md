@@ -2,6 +2,8 @@
 
 The Waffletone is a musical instrument.
 
+![](bfo-side.jpg)
+
 ## The idea
 
 It's a grid of square buttons with a regular (isomorphic) layout of notes.  Go up one square to increase pitch by one semitone; go right one square to add 3 semitones (a minor third).
@@ -27,6 +29,9 @@ It's best played while sitting in an ergonomic chair at a desk, as if typing on 
 
 ## Note layout
 
+![](bfo-top.jpg)
+![](layout.png)
+
 Notes are arranged in a regular grid.
 Move up one button to +1 semitone.
 Move right one button to +3 semitones (a minor third interval).
@@ -34,6 +39,13 @@ Move right one button to +3 semitones (a minor third interval).
 Think of vertical columns as strings which increase in pitch as you move up them.
 
 This is similar to a chromatic button accordion (C system) except that's slanted into a hexagonal grid, and this is in a square grid.
+
+The colorful keys are landmark notes (C, F, and G).
+
+Special keys:
+* FN: lets you re-use some of the note buttons to do other things: transpose the whole keyboard; change the computer speaker volume
+* Octave drop: lowers all notes by 2 octaves while held down.
+* Sustain: acts like the sustain pedal on a piano.
 
 ## Scales
 
@@ -72,6 +84,8 @@ Or on a desktop,
 * [Bitwig Studio](https://www.bitwig.com/en/home.html)
 
 # Building the hardware
+
+![](bfo-back.jpg)
 
 We're using the same hardware used by the DIY mechanical keyboard enthusiast community.  (Typing keyboard hardware, not piano keyboard hardware.)
 They call these grid-shaped layouts "ortholinear keyboards".
