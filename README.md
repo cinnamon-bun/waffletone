@@ -2,10 +2,12 @@
 
 Waffletones are a kind of musical instrument.
 
+One-handed version
 ![](bfo-side.jpg)
 
+Two-handed version
 ![](split.jpg)
-(Ignore the printed letters on this one!  These were the keys I had lying around.)
+(Ignore the printed letters on this one!  These were the keycaps I had lying around.)
 
 ## The idea
 
