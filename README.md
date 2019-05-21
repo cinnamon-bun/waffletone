@@ -1,8 +1,11 @@
 # The Waffletone
 
-The Waffletone is a musical instrument.
+Waffletones are a kind of musical instrument.
 
 ![](bfo-side.jpg)
+
+![](split.jpg)
+(Ignore the printed letters on this one!  These were the keys I had lying around.)
 
 ## The idea
 
@@ -36,7 +39,7 @@ Notes are arranged in a regular grid.
 Move up one button to +1 semitone.
 Move right one button to +3 semitones (a minor third interval).
 
-Think of vertical columns as strings which increase in pitch as you move up them.
+**Think of vertical columns as strings** which increase in pitch as you move up them.  And each string is higher than the last as you move to the right.
 
 This is similar to a chromatic button accordion (C system) except that's slanted into a hexagonal grid, and this is in a square grid.
 
@@ -49,9 +52,16 @@ Special keys:
 
 ## Scales
 
-The major scale is inherently irregular and therefore makes an idiosyncratic shape:
+The major scale is inherently irregular and makes an idiosyncratic shape.
 
-TODO: add scale diagrams
+![](c-maj-scale.png)
+
+I think of it as THE EYE:
+
+![](eye.png)
+
+(The EYE image is shifted up by one square; it's old.  I later decided to shift the grid on my Waffletone.)
+
 
 ## Chords
 
@@ -64,9 +74,19 @@ Each finger of your (right) hand corresponds to one of the 4 common notes in a c
 * ring finger: fifth (or augmented or diminshed chords)
 * pinky: seventh (major seventh, seventh, or sixth chords)
 
-TODO: add chord diagrams
 
-On a Waffletone with at least 5 rows you can play any chord without wrapping around.  If you have 4 or fewer rows you will have to wrap around the top/bottom edge for some chords.
+The dark box shows a full set of 12 keys in an octave.  Chords tend to stay in this box.  Dark red keys are the best way to play a chord; light red keys are other places you can play the same notes (in various octaves).
+
+![](c-maj.png)
+![](c-min.png)
+![](c6.png)
+![](c7.png)
+![](c-maj7.png)
+![](c-min7.png)
+![](c-aug.png)
+![](c-dim.png)
+
+On a Waffletone with at least 5 rows you can play any chord in any key without wrapping around.  If you have 4 or fewer rows you will have to wrap around the top/bottom edge for some chords, changing the shape.
 
 ## Recommended MIDI software
 
