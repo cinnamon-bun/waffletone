@@ -15,7 +15,7 @@ It's a grid of square buttons with a regular (isomorphic) layout of notes.  Go u
 
 ## The physical object
 
-Here's one way to build a waffletone!
+This document describes one way to build a Waffletone using typing-keyboard hardware.
 
 It acts like a USB MIDI keyboard -- plug it into a host device (computer, ipad) and it sends MIDI events over USB.  But it's built out of hardware usually used for computer (typing) keyboards.
 
