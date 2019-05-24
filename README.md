@@ -257,7 +257,7 @@ You can also set up a function key and re-use the normal key grid to change your
 It's best to "tent" a split keyboard by lifting the inner edges so your hands are tilted.
 In this case I want to add folding feet on both sides so you can set up this one-handed instrument to be played by either hand.
 
-I usually chose instrument sounds which don't require me to hold down the key to keep a sound going - the sound is triggered and then rings for a while.
+I usually choose instrument sounds which don't require me to hold down the key to keep a sound going - the sound is triggered and then rings for a while.
 Xylophone, dulcimer, and harp are good examples.
 
 ## Bluetooth
@@ -273,11 +273,13 @@ You can also use the same hardware that wireless mouse dongles use to connect to
 
 As mentioned above, avoid using very much power or iPads will refuse to connect unless they are also plugged into wall power.  This means limited LEDs.  A string of 10 addressable LEDs is too many.
 
+You can somehow change the USB device advertised power consumption in the QMK firmware to make the iPad accept it without wall power.  [This thread](https://github.com/qmk/qmk_firmware/issues/954) would be a place to start.
+
 ## MIDI port
 
 You could add an old fashioned MIDI cable port if you wanted to plug it into older synthesizers.
 
-These use low-bandwidth serial connections which the microcontroller should be able to support.
+These use low-bandwidth serial connections which the microcontroller should be able to support, but the QMK firmware doesn't have this feature.  You'd have to add it to QMK or write your own firmware.
 
 Note that those old fashioned MIDI cables don't supply power.
 
