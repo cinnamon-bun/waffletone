@@ -291,17 +291,30 @@ QMK can act as a USB MIDI device and send MIDI events.
 Its support for MIDI is [not documented well](https://beta.docs.qmk.fm/features/feature_audio#midi-functionality) -- maybe [these docs are better](https://github.com/qmk/qmk_firmware/pull/1112).
 Note that you don't want "Audio" features - those are piezo beeps - you want MIDI.  Check my fork below for how to enable it.
 
-You could also write your own firmware using the Arduino IDE.  The Pro Micro controller board can act as a USB MIDI device if you choose the right settings in the Arduino IDE menus.
+Instead of using QMK, you could also write your own firmware using the Arduino IDE.  The Pro Micro controller board can act as a USB MIDI device if you choose the right settings in the Arduino IDE menus.  You might go down this path if you wanted to add knobs or joysticks, or if you're adding an old fashioned MIDI plug which uses serial data instead of sending MIDI over USB.
 
-## My QMK fork
+## QMK for the Waffletone
 
-https://github.com/cinnamon-bun/qmk_firmware/commit/9763843670accc2ded57b099df21932a5687b264
+My version of QMK is here:
 
-This adds a 9x6 Waffletone layout to QMK along with some MIDI configuration and a new feature `MIDI_DEEP` which temporarily drops the keys an octave or two.
+https://github.com/cinnamon-bun/qmk_firmware/commits/keebio_bfo9000_waffletone
+
+Check out that git repo and make sure to switch to the `keebio_bfo9000_waffletone` branch.
+
+This adds a 9x6 Waffletone layout to QMK along with some MIDI configuration and a new key function `MIDI_DEEP` which temporarily drops the keys two octaves while held down.  This layout file only sets up one side of the BFO-9000 board since we only built one of them; if you built two hands-worth of board, you'll need to improve the keyboard layout file.
+
+The keyboard layout file is `keyboards/keebio/bfo9000/keymaps/waffletone/keymap.c` - you can change the note layout and function keys here.  In that file the first grid contains the normal MIDI note layout, and the second is the "function layer" which is activated when the FN key is held down.  The right-hand half of the grid is the other hand's keyboard which we are not building in this case, and it still contains computer-keyboard keycodes instead of MIDI notes.
+
+There are also two shell scripts at the root folder `waffletone-make.sh` and `waffletone-flash.sh` which will help you build the code and flash the board.
+
+To flash the firmware onto the board,
+* plug it into your computer by USB
+* push and release the reset button on the back of the BFO-9000
+* within a few seconds, run `./waffletone-flash.sh`
 
 ## Example QMK note layout
 
-This is the keymap from the older, first Waffletone prototype which was a two-handed split keyboard.
+This is an example keymap from the smaller, two-handed Waffletone which was built on a Keebio Viterbi board.
 
 The right hand's upper left key is a function key which enables the second keymap layer with transpose controls.
 It also has volume adjustment keys which work the same as keys on a regular computer keyboard.
@@ -338,8 +351,17 @@ I added the keycode `MI_MOD` which is like a sustain pedal but in toggle mode in
   //|----+----+----+----+----+----+-------+       ------+---------+---------+---------+----------+----------+--------|
   )
 
-
 ```
+
+Meaning of some keycodes:
+* `MI_Ds_3` is a MIDI note for Dsharp in octave 3
+* `FN` is the function key which switches to the second layer of keys
+* `MI_OCT_2` transposes all the notes up to octave 2.  They stay that way until the keyboard loses power.
+* `MI_TRNS_2` transposes all notes up to 2 semitones above their normal value.
+* `MI_SUS` is like a piano sustain pedal - while held down, all notes continue playing after you release them
+* `MI_DEEP` temporarily drops all notes by 2 octaves while held down
+* `MUTE`, `VOLD`, `VOLU` change the volume of the attached computer or iPad.  These are the same as the volume buttons on a typing keyboard.
+
 
 # Prior art / similar things
 
