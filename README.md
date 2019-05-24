@@ -271,9 +271,9 @@ You can also use the same hardware that wireless mouse dongles use to connect to
 
 ## Power
 
-As mentioned above, avoid using very much power or iPads will refuse to connect unless they are also plugged into wall power.  This means limited LEDs.  A string of 10 addressable LEDs is too many.
+If your Waffletone draws more than 500mA, iPads will refuse to connect unless they are also plugged into wall power.
 
-You can somehow change the USB device advertised power consumption in the QMK firmware to make the iPad accept it without wall power.  [This thread](https://github.com/qmk/qmk_firmware/issues/954) would be a place to start.
+USB devices advertise how much power they want when they're plugged in.  You can change this in the QMK firmware so that iPads won't complain - otherwise it defaults to 500mA.  In my firmware below, I added `#define USB_MAX_POWER_CONSUMPTION 100` in the file `keyboards/keebio/bfo9000/keymaps/waffletone/config.h`
 
 ## MIDI port
 
