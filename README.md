@@ -123,18 +123,25 @@ On a Waffletone with at least 5 rows you can play any chord in any key without w
 
 ## Recommended MIDI software
 
-Plug your Waffletone into an iPad and use these apps to create sound:
+(What is MIDI?  It's a format for sending notes over wires.  It doesn't send *audio*, only descriptions of which notes to play and at what volume.  You need an app to convert those descriptions into actual sound.)
 
-* [Thumbjam](https://thumbjam.com/) is an iOS app which receives MIDI signals and plays sounds.  It has a built-in menu for downloading more sounds, which includes a lot of real instruments.
+Plug your Waffletone into an iPad and use these apps to make sound:
+
 * Garage Band
+* [Thumbjam](https://thumbjam.com/) has a built-in menu for downloading more sounds, which includes a lot of real instruments.
 
 Note that to connect to an iPad you need a [lightning to USB adapter](https://www.apple.com/shop/product/MD821AM/A/lightning-to-usb-camera-adapter).  If your Waffletone draws a lot of power over USB, you'll need the version of the adapter which also allows charging the iPad at the same time.
 
-Or on a desktop,
+On a desktop, use a DAW (digital audio workstation) app.  These are complex and can be imtimidating; look for a getting-started tutorial.
 
 * Garage Band
 * [Ableton Live](https://www.ableton.com/)
 * [Bitwig Studio](https://www.bitwig.com/en/home.html)
+
+Or on a desktop, a simpler "VST host" app combined with a VST synth plugin.
+
+* [Cantabile Lite](https://www.cantabilesoftware.com/free-vst-host<Paste>) - Free VST host for windows
+* [A list of some free VST synth plugins](https://blog.landr.com/the-7-best-free-synth-vst-plugins/) which I haven't tried
 
 # Building the hardware
 
