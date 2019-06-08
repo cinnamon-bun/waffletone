@@ -400,34 +400,63 @@ Apps
 
 * [MinorThirds](https://www.youtube.com/watch?v=1ktnz6aP668) (iOS)
   * Happens to have the same note layout as a Waffletone
+  * The author has performance videos [on Youtube](https://www.youtube.com/watch?v=xYNzZSO5j34)
+  * [They also built](https://www.youtube.com/watch?v=5go2zA8dZQM) a Waffletone-style keyboard out of a point of sale keyboard
+  * Rather than modifying the keyboard firmware, they have a program running on the computer to convert keystrokes into MIDI.  [It's on GitHub](https://github.com/vinicius-mello/keymidi)
 * [Musix Pro](https://shiverware.com/musixpro/) (iOS)
-  * You can configure a Waffletone style grid in this app
+  * Allows you to set up any kind of square or hex grid
+  * You can configure a Waffletone style grid in this app: going up adds 1 semitone; going right adds 3 semitones
 
-Musical devices with regular grids
+Gadgets with grids of buttons that send MIDI
 
+* [Linnstrument](http://www.rogerlinndesign.com/linnstrument.html)
+  * Has a different note layout - guitar/bass style fourths instead of minor thirds, with strings running horizontally
+  * Hackable firmware to acheive Waffletone layout - [here's a patch](https://github.com/rogerlinndesign/linnstrument-firmware/pull/36)
+  * Pressure sensitive
+  * Buttons have no travel and are only pressure sensitive.  Requires continuous hand force to play - not ergonomic
+  * Can't play certain combinations of notes due to sensor limitations (it can't detect all 4 notes in the corners of a rectangle).  This doesn't happen often in a Waffletone layout.
+* [Ableton Push](https://www.ableton.com/en/push/)
+  * 8 x 8
+  * Same layout as a Linnstrument
+  * Can also be put in "scale mode" where each row of 8 notes is one octave's-worth of a scale (diatonic) instead of including all 12 notes per octave (chromatic)
+  * Pressure sensitive
+  * Requires more hand force to play - not ergonomic
+* Novation Launchpad
+  * 8 x 8
+  * Similar to Ableton Push but cheaper
+* [Monome](https://monome.org/docs/grid/)
+  * 16 x 8
+  * Tiny squishy buttons, designed more for sequencing instead of realtime performance
+* [Midi Fighter](https://www.midifighter.com/)
+  * 4 x 4 (too small) or 8 x 8
+  * Grid of large arcade buttons
+  * Buttons might be too large to comfortably play chords using Waffletone note layout
+  * Often used to [trigger samples](https://www.youtube.com/watch?v=6ZcaXikDUqU) rather than playing notes, but it's configurable
+* [Axis64](https://www.c-thru-music.com/cgi/?page=prod_axis-64) and Axis49 were hex-grid keyboards that sent MIDI.  Now out of production, maybe available used if you can find one
+
+The grids-of-buttons listed above typically send generic MIDI and might require fancy software on a desktop to map the MIDI to notes in the way you want.  Some of them have lights under each button which can be controlled by sending special MIDI messages from the desktop back to the device.
+
+Acoustic instruments with regular note spacing, in general
+
+* [Chromatone](https://chromatone.jp/)
+  * Like a normal piano MIDI keyboard but in Janko layout
+  * You can also make your own DIY Janko keyboard by gluing LEGOs to a piano keyboard
 * Chromatic button accordions
   * C-system button accordions have the same layout as Waffletone, but skewed from a square grid into a hex grid
-* [Linnstrument](http://www.rogerlinndesign.com/linnstrument.html)
-  * Has a different note layout - guitar/bass style fourths instead of minor thirds, oriented differently
-  * Velocity sensitive
-  * Requires more hand force to play - not ergonomic
-* [Ableton Push](https://www.ableton.com/en/push/)
-  * Same layout as a Linnstrument
-  * Velocity sensitive
-  * Requires more hand force to play - not ergonomic
-* Monome
-* Novation Launchpad
-* Midi Fighter
-* [Chromatone](https://chromatone.jp/)
-  * Like a normal MIDI keyboard but in Janko layout
-* Harpejji - strings spaced in regular intervals of a major second (2 semitones)
+  * B-system accordions have a mirrored or transposed layout, I think
+* [Harpejji](https://www.marcodi.com/) - strings spaced in regular intervals of a major second (2 semitones)
 * Bass guitar - strings spaced in regular intervals of a fourth (5 semitones)
 * Mandolin - strings spaced in regular intervals of a fifth (7 semitones)
 
 Other isomorphic key layouts
 
-* Janko
-* Wicki-Hayden
+* [Janko](https://en.wikipedia.org/wiki/Jank%C3%B3_keyboard), rarely used in piano-like instruments
+* [Wicki-Hayden](https://en.wikipedia.org/wiki/Wicki-Hayden_note_layout), used by some [http://www.concertina.com/hayden-duet/](concertinas)
+
+Other homebrew isomorphic keyboards.  Both of these use Wicki-Hayden layouts
+
+* [The Thummer](https://www.wired.com/2007/01/the-thummer-a-m/)
+* [The Jammer](https://en.wikipedia.org/wiki/Jammer_keyboard)
 
 Grid-shaped typing keyboards ("ortholinear" keyboards)
 
