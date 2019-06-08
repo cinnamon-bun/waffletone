@@ -9,6 +9,37 @@ Two-handed version
 ![](split.jpg)
 (Ignore the printed letters on this one!  These were the keycaps I had lying around.)
 
+## Table of Contents
+
+- [The Waffletone](#the-waffletone)
+  * [The idea](#the-idea)
+  * [The physical object](#the-physical-object)
+- [Design criteria](#design-criteria)
+- [How to play it](#how-to-play-it)
+  * [Note layout](#note-layout)
+  * [Scales](#scales)
+  * [Chords](#chords)
+  * [Recommended MIDI software](#recommended-midi-software)
+- [Building the hardware](#building-the-hardware)
+  * [Vocabulary / Parts of a keyboard](#vocabulary---parts-of-a-keyboard)
+  * [Resources](#resources)
+  * [Supplies list](#supplies-list)
+    + [Keyswitch choices](#keyswitch-choices)
+    + [Keycap choices](#keycap-choices)
+  * [Soldering](#soldering)
+  * [Soldering the microcontroller](#soldering-the-microcontroller)
+  * [Enclosure](#enclosure)
+  * [Extra Knobs](#extra-knobs)
+  * [Ergonomics](#ergonomics)
+  * [Bluetooth](#bluetooth)
+  * [Power](#power)
+  * [MIDI port](#midi-port)
+- [Firmware](#firmware)
+  * [QMK for the Waffletone](#qmk-for-the-waffletone)
+  * [Example QMK note layout](#example-qmk-note-layout)
+- [Prior art / similar things](#prior-art---similar-things)
+
+
 ## The idea
 
 It's a grid of square buttons with a regular (isomorphic) layout of notes.  Go up one square to increase pitch by one semitone; go right one square to add 3 semitones (a minor third).
