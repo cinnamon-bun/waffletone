@@ -16,6 +16,9 @@
 // To convert this into SVG for a CNC machine, you have to first export it as an OBJ or STL model
 // somehow, from OpenJSCAD.  Then use https://slic3r.org/ to make cross sections and export as SVG.
 // 
+// These dimensions were measured from real life objects but I haven't tried cutting the wood
+// and fitting everything together yet.
+//
 // z is up
 // dimensions are in mm
 // origin at lower left of key grid

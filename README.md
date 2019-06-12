@@ -38,6 +38,7 @@ Two-handed version
   * [QMK for the Waffletone](#qmk-for-the-waffletone)
   * [Example QMK note layout](#example-qmk-note-layout)
 - [Prior art / similar things](#prior-art---similar-things)
+- [Housing](#housing)
 
 
 ## The idea
@@ -400,7 +401,6 @@ Meaning of some keycodes:
 * `MI_DEEP` temporarily drops all notes by 2 octaves while held down
 * `MUTE`, `VOLD`, `VOLU` change the volume of the attached computer or iPad.  These are the same as the volume buttons on a typing keyboard.
 
-
 # Prior art / similar things
 
 Apps
@@ -469,3 +469,15 @@ Grid-shaped typing keyboards ("ortholinear" keyboards)
 
 * [BFO-9000](https://keeb.io/products/bfo-9000-keyboard-customizable-full-size-split-ortholinear?variant=8116065271914)
 * Planck and Preonic by [OLKB](https://olkb.com/)
+
+# Housing
+
+There is a 3d CAD model for a housing made of stacked planks of laser-cut or CNC cut plywood: [housing-openjscad.js](housing-openjscad.js)
+
+The top of that file contains instructions on how to use it.
+It hasn't been tested yet in the real world so the dimensions might need adjustment.
+
+![](housing1.png)
+![](housing2.png)
+![](housing3.png)
+![](housing4.png)
