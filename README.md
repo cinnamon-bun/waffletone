@@ -24,6 +24,7 @@ Two-handed version
   * [Vocabulary / Parts of a keyboard](#vocabulary---parts-of-a-keyboard)
   * [Resources](#resources)
   * [Supplies list](#supplies-list)
+    + [Plate vs PCB mount switches](#plate-vs-pcb-mount-switches)
     + [Keyswitch choices](#keyswitch-choices)
     + [Keycap choices](#keycap-choices)
   * [Soldering](#soldering)
@@ -37,7 +38,7 @@ Two-handed version
 - [Firmware](#firmware)
   * [QMK for the Waffletone](#qmk-for-the-waffletone)
   * [Example QMK note layout](#example-qmk-note-layout)
-- [Prior art / similar things](#prior-art---similar-things)
+- [Prior art / similar things](#prior-art--similar-things)
 - [Housing](#housing)
 
 
