@@ -217,6 +217,20 @@ Also: [Wii Nunchuck](https://www.adafruit.com/product/342) and its [Proprietary 
 
 It's a good idea to use magnetic USB cables to avoid damage to the microcontroller board if the USB cable gets yanked.  The USB socket on the microcontroller can be easily torn off the board.
 
+### Plate vs PCB mount switches
+
+I recommend PCB Mount switches, not Plate Mount switches.  You want the extra plastic nubs to orient and strengthen the switches.
+
+![](plate_pcb.jpg)
+
+Some keyboards have a "plate" - an extra layer of material above the PCB that the switches snap into for mechanical stability.  You don't need one, but some people like them.  They also help if you're going to switch the keycaps frequently since that has a chance of pulling the entire switch off the PCB.
+
+In this picture there is a top plate (metal with square holes), a PCB for electrical connections (not visible), and then a bottom plate (solid metal).  Spacers hold the two metal plates together, and the PCB floats in the middle, only held by its solder connections to the switches.
+
+![](plate.png)
+
+A plate can be 3d printed, cut from metal or acrylic, or manufactured as a PCB that happens to have no electronics in it.  Keebio sells [acrylic plates](https://keeb.io/collections/keyboard-pcbs/products/bfo-9000-keyboard-customizable-full-size-split-ortholinear?variant=8116065271914) for the BFO-9000.
+
 ### Keyswitch choices
 
 I recommend "silent" keyswitches because the clack of keys will distract from the music.
