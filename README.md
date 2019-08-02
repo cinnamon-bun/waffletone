@@ -214,7 +214,11 @@ In this case we're building a one-handed version with 6 x 9 buttons.
 
 You can get cheaper keycaps from Amazon: [link1](https://www.amazon.com/Profile-Keycaps-Switches-Mechanical-Keyboard/dp/B06XK8BD4G/ref=sr_1_2?keywords=cherry+keycaps+blank&qid=1552427878&s=gateway&sr=8-2) [link2](https://www.amazon.com/Keycaps-Non-Backlit-Switches-Mechanical-Keyboard/dp/B07G9DHJT4/ref=sr_1_3?keywords=cherry%2Bkeycaps%2Bblank&qid=1552427955&refinements=p_85%3A2470955011&rnid=2470954011&rps=1&s=gateway&sr=8-3&th=1#customerReviews) [link3](https://www.amazon.com/Profile-Keycaps-Switches-Mechanical-Keyboard/dp/B06XK984SB/ref=sr_1_12?keywords=cherry+keycaps+blank&qid=1552427955&refinements=p_85%3A2470955011&rnid=2470954011&rps=1&s=gateway&sr=8-12)
 
-Also: [Wii Nunchuck](https://www.adafruit.com/product/342) and its [Proprietary Plug adapter](https://www.adafruit.com/product/345) so we can have a joystick to use for pitch bends.
+The Elite-C microcontroller is also available from [spacecat.design](https://spacecat.design/products/elite-c-usb-c-pro-micro-replacement).  If it's out of stock you can use a regular 5v Pro Micro 32u4 such as [this one from Sparkfun](https://www.sparkfun.com/products/12640) 
+
+The Elite-C is nicer because it has a USB-C connector (which is strong and won't rip off the board) and it has a couple of extra pins on the bottom we can use for joysticks or other fun additions.
+
+Also: [Wii Nunchuck](https://www.adafruit.com/product/342) and its [Proprietary Plug adapter](https://www.adafruit.com/product/345) so we can have a joystick to use for pitch bends... if we ever write firmware for that.
 
 It's a good idea to use magnetic USB cables to avoid damage to the microcontroller board if the USB cable gets yanked.  The USB socket on the microcontroller can be easily torn off the board.
 
